@@ -22,3 +22,28 @@ input, textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-rad
 ul.timeline { list-style: none; padding: 0; }
 ul.timeline li { padding: 12px 0; border-bottom: 1px solid #eee; }
 small.hint { display: block; opacity: .7; margin-top: 6px; }
+.form-wrap { 
+  width: 100%;
+  max-width: 960px;   /* matches your container width */
+  margin: 0 auto;
+}
+
+.embed {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+  border-radius: 12px;
+  min-height: 900px;  /* nice desktop height; adjust if you want */
+}
+
+/* Mobile tweaks */
+@media (max-width: 640px) {
+  /* Make the form feel edge-to-edge on phones */
+  .form-wrap { 
+    width: 100%;
+  }
+  .embed {
+    min-height: 100svh;  /* fill the phone’s viewport height */
+  }
+}
